@@ -6,17 +6,15 @@ print("#1. For checking the data.")
 print("===================")
 print("Topic - Population of India(2011)")
 print(" ")
-print("#3. Line Chart")
 print("    Press 1 to create a line chart for total population")
 print("    Press 2 to create a line chart for decadal population growth rate.")
 print("    Press 3 to create a line chart for population density.")
 print(" ")
-print("#4. Bar Graph")
 print("    Press 4 to create a bar graph for total population.")
 print("    Press 5 to create a bar graph for decadal population growth rate.")
 print("    Press 6 to create a bar graph for population density.")
 print(" ")
-print("#6. For Exit")
+print("#7. For Exit")
 print("===============")
 
 choice2 = int(input('Enter your choice: '))
@@ -45,7 +43,8 @@ elif choice2 == 2:
     
     plt.figure(figsize=(12, 6))
     
-    plt.plot(df2["India / State/ Union Territory"], df2["Decadal Population Growth Rate "], marker='o', linestyle='-', color='blue')
+    plt.plot(df2["India / State/ Union Territory"], df2["Decadal Population Growth Rate "], marker='o', linestyle='-', 
+             color='blue')
     plt.xticks(rotation=90)
     plt.xlabel('India / State/ Union Territory')
     plt.ylabel('Decadal Population Growth Rate ')
@@ -62,7 +61,8 @@ elif choice2 == 3:
     
     plt.figure(figsize=(12, 6))
     
-    plt.plot(df3["India / State/ Union Territory"], df3["Population Density (per sq.km) - 2011"], marker='o', linestyle='-', color='orange')
+    plt.plot(df3["India / State/ Union Territory"], df3["Population Density (per sq.km) - 2011"], marker='o', linestyle='-',
+             color='orange')
     plt.xticks(rotation=90)
     plt.xlabel('India / State/ Union Territory')
     plt.ylabel('Population Density (per sq.km) - 2011')
@@ -119,9 +119,11 @@ elif choice2 == 6:
     plt.show()
     print('\n')
 
-        
-print("thank you")
+else:       
+    print("thank you")
 
+    
+    
     
     
     
